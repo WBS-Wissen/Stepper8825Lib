@@ -18,4 +18,4 @@ private:
     float _speed = 500;
 };
 
-#endif
+#endif // MYSTEPPERLIB_H

@@ -1,9 +1,7 @@
 #include "Stepper8825Lib.h"
 
-StepperMotor::StepperMotor(int stepPin, int dirPin, int enablePin) {
-    _stepPin = stepPin;
-    _dirPin = dirPin;
-    _enablePin = enablePin;
+StepperMotor::StepperMotor(int stepPin, int dirPin, int enablePin)
+    : _stepPin(stepPin), _dirPin(dirPin), _enablePin(enablePin) {
     
     pinMode(_stepPin, OUTPUT);
     pinMode(_dirPin, OUTPUT);
